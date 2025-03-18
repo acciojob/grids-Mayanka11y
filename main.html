@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container custom-container">
+        <!-- Row 1 -->
+        <div class="row custom-row">
+            <div class="col-md-4 col-sm-6 custom-col row1-col1">Row1 col1</div>
+            <div class="col-md-8 col-sm-6 custom-col row1-col2">Row1 col2</div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row custom-row">
+            <div class="col-md-4 offset-md-2 col-sm-6 custom-col row2-col1">Row2 col1</div>
+            <div class="col-md-4 col-sm-6 custom-col row2-col2">Row2 col2</div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row custom-row justify-content-center">
+            <div class="col-md-4 col-sm-6 custom-col row3-col1">Row3 col1</div>
+            <div class="col-md-4 col-sm-6 custom-col row3-col2">Row3 col2</div>
+        </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
